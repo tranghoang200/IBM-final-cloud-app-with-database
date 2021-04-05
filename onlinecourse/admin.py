@@ -7,7 +7,7 @@ class ChoiceInline(admin.StackedInline):
     model = Choice
     extra = 4
 
-class QuestionInline(admin.ModelAdmin):
+class QuestionAdmin(admin.ModelAdmin):
     inlines = [ChoiceInline]
 
 class LessonInline(admin.StackedInline):
